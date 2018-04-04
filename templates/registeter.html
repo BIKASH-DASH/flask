@@ -1,0 +1,114 @@
+{% include "header.html" ignore missing %}
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<form id="RegisteterForm" action="" method="POST" role="form" enctype="multipart/form-data">
+						<legend>Registeter Form</legend>
+					
+						<div class="form-group">
+							<label for="firstname">First Name * :</label>
+							<input type="text" required="" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+						</div>
+					
+									
+						<div class="form-group">
+							<label for="lastname">Last Name * :</label>
+							<input type="text" required="" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+						</div>					
+									
+						<div class="form-group">
+							<label for="phoneno">Phone No :</label>
+							<input type="text" class="form-control" id="phoneno" name="phoneno"  pattern="[789][0-9]{9}" placeholder="Phone no">
+						</div>
+
+						<div class="form-group">
+							<label for="emailid">Email Id * : </label>
+							<input type="text" required="" class="form-control" id="emailid" name="emailid" placeholder="Email Id">
+						</div>
+					
+						<div class="form-group">
+							<label for="password">Password * :</label>
+							<input type="password" required="" class="form-control" id="password" name="password" placeholder="Password">
+						</div>
+										
+						<div class="form-group">
+							<label for="cpassword">Confirm Password * :</label>
+							<input type="password" required="" class="form-control" id="cpassword" name="cpassword" placeholder="cPassword">
+						</div>
+
+						<div class="form-group">
+							<label for="ppicture">Profile Picture * : </label>
+							<input type="file" required="" class="form-control" id="ppicture" name="ppicture" placeholder="Profile Picture">
+
+						</div>
+					
+						<div class="form-group">
+							<label for="address">Address * : </label>
+							<textarea name="address" id="inputAddress" class="form-control" rows="3" placeholder="address" required="required"></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="State">State  :</label>
+							<input type="text" class="form-control" id="state" placeholder="State">
+						</div>
+
+						<div class="form-group">
+							<label for="city">City  :</label>
+							<input type="text" class="form-control" id="city" placeholder="City">
+						</div>
+					
+
+						<div class="form-group">
+							<label for="zipcode">Zip code  : </label>
+							<input type="text" class="form-control" id="zipcode" placeholder="Zip code">
+						</div>
+										
+
+						<div class="form-group">
+							<label for="gender">Gender :</label>
+							<div class="radio">
+								<label>
+									<input type="radio" name="gender" id="inputGender" value="male" checked="checked">
+									Male
+								</label>
+								<label>
+									<input type="radio" name="gender" id="inputGender" value="female" checked="">
+									Female
+								</label>
+							</div>
+						</div>
+															
+
+						<div class="form-group">
+							<label for="user">User Designation :</label>
+							<select name="UserDesignation" id="input" class="form-control" required="required">
+								<option value="admin">admin</option>
+								<option value="subadmin">subadmin</option>
+								<option value="Normal User">Normal User</option>
+							</select>
+						</div>															
+
+						<div class="form-group">
+							<label for="user">Select Your Technologies :</label>
+							<select name="Technologies" id="input" class="form-control" required="required">
+								<option value="PHP">PHP</option>
+								<option value="Wordpress">Wordpress</option>
+								<option value="Jquery">Jquery</option>
+								<option value="Ruby on Rails">Ruby on Rails</option>
+								<option value="Python">Python</option>
+								<option value="SEO">SEO</option>
+								<option value="UI/UX">UI/UX</option>
+								<option value="Android">Android</option>
+								<option value="IOS">IOS</option>
+							</select>
+						</div>
+					
+
+						
+					
+						<button type="submit" class="btn btn-primary pull-right">Submit</button>
+					</form>
+
+					<div class="message"></div>
+			
+{% include "footer.html" ignore missing %}
+	

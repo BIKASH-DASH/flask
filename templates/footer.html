@@ -1,0 +1,22 @@
+</div>
+		</div>
+
+	<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 		<script>
+ 				jQuery(document).ready(function($) {
+ 					$('#RegisteterForm').submit(function() {
+ 						$.post('/saveinformation', $(this).serialize(), function(data, textStatus, xhr) {
+ 							$('.message').html('Data saved successfully ');
+ 							$('#RegisteterForm')[0].reset();
+ 						});
+ 						return false ;
+ 					});
+ 				});
+
+ 		</script>
+	</body>
+</html>
